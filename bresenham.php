@@ -1,12 +1,12 @@
 <?php
     require_once 'grafica.php';
-    if (!isset($_POST["x1"]) || !isset($_POST["y1"]) || !isset($_POST["x2"]) || !isset($_POST["y2"]))
+    if (!isset($_POST['x1']) || !isset($_POST['y1']) || !isset($_POST['x2']) || !isset($_POST['y2']))
         echo '';
     else {
-        $x1 = $_POST["x1"];
-        $y1 = $_POST["y1"];
-        $x2 = $_POST["x2"];
-        $y2 = $_POST["y2"];
+        $x1 = $_POST['x1'];
+        $y1 = $_POST['y1'];
+        $x2 = $_POST['x2'];
+        $y2 = $_POST['y2'];
         $ptsX = array();
         $ptsY = array();
         $dx = $x2 - $x1;
@@ -21,6 +21,6 @@
            $ptsY[] = (int)$y;
            $x1 += ($sx * 1);
         }
-        grafica($ptsY, $ptsX, "Algoritmo de Bresenham");
+        grafica($ptsY, $ptsX, 'Algoritmo de Bresenham');
     }
 ?>

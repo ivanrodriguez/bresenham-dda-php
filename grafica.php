@@ -1,4 +1,4 @@
-<?php // content="text/plain; charset=utf-8"
+<?php
     require_once ('jpgraph/jpgraph.php');
     require_once ('jpgraph/jpgraph_scatter.php');
     function grafica($datay, $datax, $titulo) {
